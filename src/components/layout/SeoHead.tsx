@@ -20,9 +20,11 @@ function upsertMetaTag(
 }
 
 export function SeoHead() {
-  const { routeId, pathname, t } = useRouter();
+  const { routeId, isDesignSystemPreview, pathname, t } = useRouter();
   const pageMeta = routeId ? t.meta.pages[routeId] : null;
-  const title = pageMeta?.title ?? t.meta.defaultTitle;
+  const title = isDesignSystemPreview
+    ? 'Design System — Maison Karima (Anteprima Fase 2)'
+    : pageMeta?.title ?? t.meta.defaultTitle;
   const description = pageMeta?.description ?? t.meta.defaultDescription;
 
   useEffect(() => {

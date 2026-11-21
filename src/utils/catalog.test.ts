@@ -2,7 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { PRODUCTS_CATALOG } from '../data/catalog';
 import type { Product } from '../types/catalog';
-import { filterVisibleProducts, getFeaturedProducts } from './catalog';
+import {
+  filterVisibleProducts,
+  formatProductPrice,
+  getFeaturedProducts,
+} from './catalog';
 
 test('initial catalog archive contains no fabricated products in Phase 1', () => {
   assert.equal(PRODUCTS_CATALOG.length, 0);
@@ -49,4 +53,18 @@ test('filterVisibleProducts filters by visibility and category cleanly', () => {
   assert.equal(filterVisibleProducts(sample, 'caftani').length, 1);
   assert.equal(filterVisibleProducts(sample, 'cerimonia').length, 0);
   assert.equal(getFeaturedProducts(sample).length, 1);
+});
+
+test('formatProductPrice respects mostra_prezzo and null price rules', () => {
+  assert.equal(
+    formatProductPrice(null, true, 'EUR', 'Prezzo su richiesta'),
+    'Prezzo su richiesta'
+  );
+  assert.equal(
+    formatProductPrice(240, false, 'EUR', 'Prezzo su richiesta'),
+    'Prezzo su richiesta'
+  );
+  const formatted = formatProductPrice(240, true, 'EUR');
+  assert.match(formatted, /240/);
+  assert.match(formatted, /€/);
 });

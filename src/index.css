@@ -1,31 +1,76 @@
 @import "tailwindcss";
 
+:root {
+  /* Palette ufficiale Maison Karima */
+  --mk-color-avorio: #FAF8F5;
+  --mk-color-avorio-caldo: #F4EFE6;
+  --mk-color-oro: #C5A059;
+  --mk-color-bordeaux: #5C1E2E;
+  --mk-color-bordeaux-hover: #481623;
+  --mk-color-antracite: #222222;
+  --mk-color-antracite-muted: #55524E;
+
+  /* Superfici, bordi e raggi */
+  --mk-border-hairline: rgba(197, 160, 89, 0.35);
+  --mk-border-strong: rgba(197, 160, 89, 0.65);
+  --mk-radius-none: 0px;
+  --mk-radius-subtle: 2px;
+  --mk-radius-card: 4px;
+
+  /* Ombre discrete e transizioni */
+  --mk-shadow-card: 0 2px 10px rgba(34, 34, 34, 0.04);
+  --mk-shadow-card-hover: 0 10px 24px rgba(34, 34, 34, 0.08);
+  --mk-ease-atelier: cubic-bezier(0.16, 1, 0.3, 1);
+  --mk-duration-fast: 160ms;
+}
+
 @theme {
   --color-avorio: #FAF8F5;
+  --color-avorio-caldo: #F4EFE6;
   --color-oro: #C5A059;
   --color-bordeaux: #5C1E2E;
+  --color-bordeaux-hover: #481623;
   --color-antracite: #222222;
+  --color-antracite-muted: #55524E;
   --font-display: "Playfair Display", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 
 @layer base {
   html {
-    background-color: var(--color-avorio);
-    color: var(--color-antracite);
+    background-color: var(--mk-color-avorio);
+    color: var(--mk-color-antracite);
     font-family: var(--font-sans);
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--mk-color-avorio);
+    color: var(--mk-color-antracite);
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: rgba(92, 30, 46, 0.14);
+    color: var(--mk-color-antracite);
   }
 
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
     }
   }
 }

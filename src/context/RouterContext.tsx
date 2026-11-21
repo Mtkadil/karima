@@ -15,6 +15,7 @@ interface RouterContextValue {
   pathname: string;
   locale: Locale;
   routeId: RouteId | null;
+  isDesignSystemPreview: boolean;
   t: TranslationDictionary;
   navItems: NavItem[];
   navigate: (to: string) => void;
@@ -71,6 +72,7 @@ export function RouterProvider({ children }: { children: ReactNode }) {
       pathname: resolved.normalizedPath,
       locale: resolved.locale,
       routeId: resolved.routeId,
+      isDesignSystemPreview: resolved.isDesignSystemPreview,
       t,
       navItems,
       navigate,

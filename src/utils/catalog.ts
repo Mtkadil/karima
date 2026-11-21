@@ -20,3 +20,21 @@ export function filterVisibleProducts(
 export function getFeaturedProducts(products: readonly Product[]): Product[] {
   return products.filter((product) => product.visibile && product.in_evidenza);
 }
+
+export function formatProductPrice(
+  prezzo: number | null,
+  mostraPrezzo: boolean,
+  valuta: 'EUR' = 'EUR',
+  onRequestLabel = 'Prezzo su richiesta'
+): string {
+  if (!mostraPrezzo || prezzo === null) {
+    return onRequestLabel;
+  }
+
+  return new Intl.NumberFormat('it-IT', {
+    style: 'currency',
+    currency: valuta,
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
+  }).format(prezzo);
+}

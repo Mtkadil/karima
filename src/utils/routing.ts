@@ -1,5 +1,7 @@
 import type { Locale, NavItem, RouteId, TranslationDictionary } from '../types/i18n';
 
+export const DESIGN_SYSTEM_PREVIEW_PATH = '/design-system';
+
 const ROUTE_SLUGS: Record<Locale, Record<RouteId, string>> = {
   it: {
     home: '/',
@@ -20,6 +22,7 @@ const ROUTE_SLUGS: Record<Locale, Record<RouteId, string>> = {
 export interface ResolvedRoute {
   locale: Locale;
   routeId: RouteId | null;
+  isDesignSystemPreview: boolean;
   normalizedPath: string;
 }
 
@@ -38,12 +41,22 @@ export function getRoutePath(routeId: RouteId, locale: Locale): string {
 export function resolvePath(pathname: string): ResolvedRoute {
   const normalizedPath = normalizePathname(pathname);
 
+  if (normalizedPath === DESIGN_SYSTEM_PREVIEW_PATH) {
+    return {
+      locale: 'it',
+      routeId: null,
+      isDesignSystemPreview: true,
+      normalizedPath,
+    };
+  }
+
   if (normalizedPath === '/fr' || normalizedPath.startsWith('/fr/')) {
     const frEntries = Object.entries(ROUTE_SLUGS.fr) as [RouteId, string][];
     const match = frEntries.find(([, path]) => path === normalizedPath);
     return {
       locale: 'fr',
       routeId: match ? match[0] : null,
+      isDesignSystemPreview: false,
       normalizedPath,
     };
   }
@@ -53,6 +66,7 @@ export function resolvePath(pathname: string): ResolvedRoute {
   return {
     locale: 'it',
     routeId: match ? match[0] : null,
+    isDesignSystemPreview: false,
     normalizedPath,
   };
 }

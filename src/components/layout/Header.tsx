@@ -1,8 +1,8 @@
 import { Menu, X } from 'lucide-react';
 import { useState, type MouseEvent } from 'react';
-import { BUSINESS_INFO } from '../../data/business';
 import { useRouter } from '../../context/RouterContext';
 import { getRoutePath } from '../../utils/routing';
+import { BrandMark } from '../ui/BrandMark';
 import { Container } from '../ui/Container';
 import { DesktopNavigation, MobileNavigation } from './Navigation';
 
@@ -32,9 +32,9 @@ export function Header() {
           <a
             href={homePath}
             onClick={handleBrandClick}
-            className="font-display text-lg sm:text-xl font-semibold tracking-wider text-antracite whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux"
+            className="whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux"
           >
-            {BUSINESS_INFO.brandName}
+            <BrandMark variant="compact" />
           </a>
 
           <DesktopNavigation onNavigate={() => setMobileOpen(false)} />
@@ -43,7 +43,7 @@ export function Header() {
             <a
               href={contactPath}
               onClick={handleCtaClick}
-              className="hidden md:inline-flex items-center justify-center min-h-[40px] bg-bordeaux px-4 py-2 text-xs font-medium tracking-wide text-avorio whitespace-nowrap shrink-0 transition-colors duration-150 hover:bg-[#491624] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux"
+              className="hidden md:inline-flex items-center justify-center min-h-[40px] rounded-[2px] bg-bordeaux px-4 py-2 text-xs font-medium tracking-[0.04em] text-avorio whitespace-nowrap shrink-0 transition-colors duration-150 hover:bg-bordeaux-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux"
             >
               {t.nav.primaryCta}
             </a>
@@ -54,7 +54,7 @@ export function Header() {
               aria-expanded={mobileOpen}
               aria-controls="mobile-navigation"
               aria-label={mobileOpen ? t.nav.closeMenuLabel : t.nav.openMenuLabel}
-              className="inline-flex h-11 w-11 items-center justify-center text-antracite hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux md:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-[2px] text-antracite transition-colors hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux md:hidden"
             >
               {mobileOpen ? (
                 <X className="h-5 w-5" aria-hidden="true" />

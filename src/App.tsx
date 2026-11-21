@@ -3,12 +3,17 @@ import { RouterProvider, useRouter } from './context/RouterContext';
 import { ChiSiamoPage } from './pages/ChiSiamoPage';
 import { CollezioniPage } from './pages/CollezioniPage';
 import { ContattiPage } from './pages/ContattiPage';
+import { DesignSystemPreviewPage } from './pages/DesignSystemPreviewPage';
 import { HomePage } from './pages/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ServiziPage } from './pages/ServiziPage';
 
 function ActivePage() {
-  const { routeId } = useRouter();
+  const { routeId, isDesignSystemPreview } = useRouter();
+
+  if (isDesignSystemPreview) {
+    return <DesignSystemPreviewPage />;
+  }
 
   switch (routeId) {
     case 'home':
