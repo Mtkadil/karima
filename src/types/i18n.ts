@@ -76,14 +76,72 @@ export interface TranslationDictionary {
   };
   pages: {
     home: {
-      eyebrow: string;
-      heading: string;
-      lead: string;
-      primaryAction: string;
-      secondaryAction: string;
-      sectionsTitle: string;
-      plannedSections: readonly { title: string; detail: string }[];
-      reputationLabel: string;
+      hero: {
+        location: string;
+        title: string;
+        subtitle: string;
+        primaryCta: string;
+        secondaryCta: string;
+        mediaBadge: string;
+        mediaTitle: string;
+        mediaDescription: string;
+      };
+      intro: {
+        eyebrow: string;
+        title: string;
+        body: string;
+      };
+      categories: {
+        eyebrow: string;
+        title: string;
+        actionLabel: string;
+        items: Record<
+          'caftani' | 'abbigliamento-donna' | 'cerimonia',
+          {
+            label: string;
+            title: string;
+            description: string;
+          }
+        >;
+      };
+      featured: {
+        eyebrow: string;
+        title: string;
+        emptyEyebrow: string;
+        emptyTitle: string;
+        emptyBody: string;
+        emptyPlaceholderTitle: string;
+        emptyPlaceholderDescription: string;
+        ctaLabel: string;
+      };
+      identity: {
+        eyebrow: string;
+        title: string;
+        body: string;
+        pendingNote: string;
+        ctaLabel: string;
+        mediaBadge: string;
+        mediaTitle: string;
+        mediaDescription: string;
+      };
+      reputation: {
+        eyebrow: string;
+        title: string;
+        sourcePrefix: string;
+        reviewsUnit: string;
+        note: string;
+        linkLabel: string;
+      };
+      location: {
+        eyebrow: string;
+        title: string;
+        lead: string;
+        addressLabel: string;
+        phoneLabel: string;
+        mapsLabel: string;
+        instagramLabel: string;
+        contactPageCta: string;
+      };
     };
     collezioni: {
       eyebrow: string;

@@ -91,31 +91,89 @@ export const FR_DICTIONARY: TranslationDictionary = {
   },
   pages: {
     home: {
-      eyebrow: 'Borgosesia · Viale Carlo Fassò, 28',
-      heading: 'Maison Karima',
-      lead: 'Prêt-à-porter féminin et caftans marocains. Architecture préparée pour la version française.',
-      primaryAction: 'Voir les Collections',
-      secondaryAction: 'Nous trouver',
-      sectionsTitle: 'Sections prévues pour l’accueil',
-      plannedSections: [
-        {
-          title: '01. Section Hero et présentation',
-          detail: 'Emplacement réservé aux photographies officielles de la boutique.',
+      hero: {
+        location: 'Borgosesia, Piémont',
+        title: 'Maison Karima',
+        subtitle: 'Boutique de prêt-à-porter féminin et caftans marocains.',
+        primaryCta: 'Explorer les collections',
+        secondaryCta: 'Découvrir la boutique',
+        mediaBadge: 'Visuel officiel à venir',
+        mediaTitle: 'Maison Karima · Borgosesia',
+        mediaDescription:
+          'Emplacement prévu pour une photographie réelle et autorisée de la boutique ou des collections.',
+      },
+      intro: {
+        eyebrow: 'La Boutique',
+        title: 'Prêt-à-porter féminin et caftans marocains à Borgosesia',
+        body: 'Maison Karima est une boutique dédiée au prêt-à-porter féminin et aux caftans marocains. Un espace soigné réunissant des pièces féminines contemporaines et la tradition du caftan marocain.',
+      },
+      categories: {
+        eyebrow: 'Catégories Principales',
+        title: 'Les lignes de la boutique',
+        actionLabel: 'Voir la collection',
+        items: {
+          caftani: {
+            label: 'Tradition Marocaine',
+            title: 'Caftans marocains',
+            description:
+              'Caftans marocains aux lignes raffinées, alliant savoir-faire traditionnel et allure contemporaine.',
+          },
+          'abbigliamento-donna': {
+            label: 'Collection Femme',
+            title: 'Prêt-à-porter féminin',
+            description:
+              'Sélection de prêt-à-porter féminin pensée pour le style et l’élégance du quotidien.',
+          },
+          cerimonia: {
+            label: 'Occasions Spéciales',
+            title: 'Cérémonie',
+            description:
+              'Pièces dédiées aux célébrations et événements particuliers, en attente du catalogue officiel.',
+          },
         },
-        {
-          title: '02. Catégories principales',
-          detail: 'Prêt-à-porter féminin, Caftans marocains et Cérémonie.',
-        },
-        {
-          title: '03. Sélection mise en avant',
-          detail: 'Connectée à l’archive produits séparée.',
-        },
-        {
-          title: '04. Avis Google et localisation',
-          detail: 'Note 5.0/5 (6 avis Google Business Profile) et horaires vérifiés.',
-        },
-      ],
-      reputationLabel: 'Note vérifiée sur Google Business Profile',
+      },
+      featured: {
+        eyebrow: 'Sélection Collections',
+        title: 'Pièces mises en avant',
+        emptyEyebrow: 'Catalogue photographique en préparation',
+        emptyTitle: 'Les collections seront présentées dès réception des visuels officiels',
+        emptyBody:
+          'L’archive produits est prête à accueillir les photographies réelles et les fiches détaillées des modèles.',
+        emptyPlaceholderTitle: 'Sélection en attente du catalogue réel',
+        emptyPlaceholderDescription:
+          'Aucun produit ou tarif fictif publié avant validation officielle.',
+        ctaLabel: 'Explorer les collections',
+      },
+      identity: {
+        eyebrow: 'Identité et Univers du Caftan',
+        title: 'Soin sartorial et élégance contemporaine',
+        body: 'Maison Karima réunit l’élégance du prêt-à-porter féminin et l’univers du caftan marocain dans une boutique accueillante à Borgosesia.',
+        pendingNote:
+          'L’histoire officielle de la maison et les détails des services seront publiés après validation par la direction.',
+        ctaLabel: 'Découvrir À propos',
+        mediaBadge: 'Emplacement éditorial',
+        mediaTitle: 'Atelier et détails textiles',
+        mediaDescription:
+          'Espace réservé aux photographies réelles des tissus et de la boutique.',
+      },
+      reputation: {
+        eyebrow: 'Confiance et Réputation',
+        title: 'Note vérifiée des visiteurs',
+        sourcePrefix: 'Source :',
+        reviewsUnit: 'avis vérifiés',
+        note: 'Note moyenne issue directement de la fiche Google Business Profile de la boutique.',
+        linkLabel: 'Voir la fiche Google Maps',
+      },
+      location: {
+        eyebrow: 'Accès et Contact',
+        title: 'Visiter la boutique à Borgosesia',
+        lead: 'Retrouvez-nous Viale Carlo Fassò à Borgosesia pour découvrir la boutique.',
+        addressLabel: 'Adresse',
+        phoneLabel: 'Téléphone',
+        mapsLabel: 'Ouvrir dans Google Maps',
+        instagramLabel: 'Suivre sur Instagram',
+        contactPageCta: 'Page Contact complète',
+      },
     },
     collezioni: {
       eyebrow: 'Structure Catalogue',

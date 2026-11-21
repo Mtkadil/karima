@@ -92,31 +92,89 @@ export const IT_DICTIONARY: TranslationDictionary = {
   },
   pages: {
     home: {
-      eyebrow: 'Borgosesia · Viale Carlo Fassò, 28',
-      heading: 'Maison Karima',
-      lead: 'Abbigliamento femminile e caftani marocchini. Struttura iniziale del sito predisposta secondo il brief operativo v1.1.',
-      primaryAction: 'Esplora Collezioni',
-      secondaryAction: 'Dove Siamo',
-      sectionsTitle: 'Sezioni previste dal brief per la Home',
-      plannedSections: [
-        {
-          title: '01. Hero e presentazione boutique',
-          detail: 'Slot predisposto per fotografia ufficiale della boutique o delle collezioni.',
+      hero: {
+        location: 'Borgosesia, Piemonte',
+        title: 'Maison Karima',
+        subtitle: 'Boutique di abbigliamento femminile e caftani marocchini.',
+        primaryCta: 'Esplora le collezioni',
+        secondaryCta: 'Scopri la boutique',
+        mediaBadge: 'Immagine ufficiale in arrivo',
+        mediaTitle: 'Maison Karima · Borgosesia',
+        mediaDescription:
+          'Area visuale predisposta per una fotografia reale e autorizzata della boutique o delle collezioni.',
+      },
+      intro: {
+        eyebrow: 'La Boutique',
+        title: 'Abbigliamento femminile e caftani marocchini a Borgosesia',
+        body: 'Maison Karima è una boutique dedicata all’abbigliamento femminile e ai caftani marocchini. Uno spazio curato per offrire capi contemporanei e proposte della tradizione marocchina, con attenzione alle linee, ai dettagli e alla vestibilità.',
+      },
+      categories: {
+        eyebrow: 'Categorie Principali',
+        title: 'Le linee della boutique',
+        actionLabel: 'Vai alla collezione',
+        items: {
+          caftani: {
+            label: 'Tradizione Marocchina',
+            title: 'Caftani marocchini',
+            description:
+              'Caftani marocchini dalle linee curate, selezionati per valorizzare la tradizione con gusto contemporaneo.',
+          },
+          'abbigliamento-donna': {
+            label: 'Collezione Donna',
+            title: 'Abbigliamento femminile',
+            description:
+              'Proposte di abbigliamento femminile dedicate al guardaroba quotidiano e a diverse esigenze di stile.',
+          },
+          cerimonia: {
+            label: 'Occasioni Speciali',
+            title: 'Cerimonia',
+            description:
+              'Selezione pensata per ricorrenze ed eventi speciali, in attesa del catalogo fotografico ufficiale.',
+          },
         },
-        {
-          title: '02. Categorie principali',
-          detail: 'Collegamenti alle linee Abbigliamento femminile, Caftani marocchini e Cerimonia.',
-        },
-        {
-          title: '03. Selezione capi in evidenza',
-          detail: 'Collegata all’archivio dati separato (attualmente vuoto in attesa del catalogo reale).',
-        },
-        {
-          title: '04. Reputazione Google e posizione',
-          detail: 'Valutazione 5.0/5 (6 recensioni su Google Business Profile) e orari verificati.',
-        },
-      ],
-      reputationLabel: 'Valutazione verificata su Google Business Profile',
+      },
+      featured: {
+        eyebrow: 'Selezione Collezioni',
+        title: 'Capi in evidenza',
+        emptyEyebrow: 'Archivio fotografico in preparazione',
+        emptyTitle: 'Le collezioni saranno visibili al completamento degli scatti ufficiali',
+        emptyBody:
+          'L’archivio prodotti è predisposto per accogliere le fotografie reali, i dettagli sui tessuti e le schede dei capi. Nel frattempo puoi consultare la struttura delle categorie o visitare la boutique a Borgosesia.',
+        emptyPlaceholderTitle: 'Selezione in attesa di catalogo reale',
+        emptyPlaceholderDescription:
+          'Nessun prodotto dimostrativo o prezzo fittizio pubblicato prima della conferma della titolare.',
+        ctaLabel: 'Esplora le collezioni',
+      },
+      identity: {
+        eyebrow: 'Identità e Mondo dei Caftani',
+        title: 'Cura sartoriale e tradizione contemporanea',
+        body: 'Maison Karima riunisce l’eleganza dell’abbigliamento femminile e il fascino del caftano marocchino in un contesto di boutique accogliente e riservato.',
+        pendingNote:
+          'La storia ufficiale della boutique, le lavorazioni specifiche ed eventuali servizi dedicati verranno pubblicati dopo approvazione della titolare.',
+        ctaLabel: 'Scopri Chi siamo',
+        mediaBadge: 'Segnaposto editoriale',
+        mediaTitle: 'Atelier e dettagli sartoriali',
+        mediaDescription:
+          'Spazio predisposto per immagini reali dei tessuti e dell’ambiente della boutique.',
+      },
+      reputation: {
+        eyebrow: 'Reputazione e Fiducia',
+        title: 'Valutazione verificata dei visitatori',
+        sourcePrefix: 'Fonte:',
+        reviewsUnit: 'recensioni verificate',
+        note: 'Valutazione media rilevata direttamente dalla scheda Google Business Profile della boutique.',
+        linkLabel: 'Consulta la scheda su Google Maps',
+      },
+      location: {
+        eyebrow: 'Posizione e Contatti',
+        title: 'Visita la boutique a Borgosesia',
+        lead: 'Ti accogliamo in Viale Carlo Fassò per scoprire dal vivo le proposte della boutique.',
+        addressLabel: 'Indirizzo',
+        phoneLabel: 'Telefono',
+        mapsLabel: 'Apri su Google Maps',
+        instagramLabel: 'Seguici su Instagram',
+        contactPageCta: 'Pagina Contatti completa',
+      },
     },
     collezioni: {
       eyebrow: 'Struttura Catalogo',
