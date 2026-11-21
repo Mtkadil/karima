@@ -197,17 +197,39 @@ export interface TranslationDictionary {
       eyebrow: string;
       heading: string;
       lead: string;
+      heroNote: string;
+      overviewTitle: string;
+      overviewNote: string;
+      pendingBadgeLabel: string;
+      confirmedBadgeLabel: string;
+      pendingDetailsHeading: string;
+      sourceReferenceLabel: string;
       services: {
         'noleggio-caftani': {
+          eyebrow: string;
           title: string;
           description: string;
           statusLabel: string;
+          sourceLabel: string;
+          pendingItems: readonly string[];
+          atelierQuote: string;
         };
         'riparazioni-sartoriali': {
+          eyebrow: string;
           title: string;
           description: string;
           statusLabel: string;
+          sourceLabel: string;
+          pendingItems: readonly string[];
+          atelierQuote: string;
         };
+      };
+      contactCtaSection: {
+        eyebrow: string;
+        title: string;
+        description: string;
+        primaryCta: string;
+        secondaryCta: string;
       };
       ctaLabel: string;
     };

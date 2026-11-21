@@ -20,9 +20,9 @@ export const IT_DICTIONARY: TranslationDictionary = {
           'Caftani marocchini, abbigliamento femminile e proposte da cerimonia della boutique Maison Karima a Borgosesia (VC).',
       },
       servizi: {
-        title: 'Servizi Sartoria e Noleggio — Maison Karima',
+        title: 'Servizi Sartoria e Noleggio — Maison Karima Borgosesia',
         description:
-          'Sezione predisposta per noleggio caftani e riparazioni sartoriali presso Maison Karima a Borgosesia, in attesa di conferma operativa.',
+          'Servizi di noleggio caftani e riparazioni sartoriali presso Maison Karima a Borgosesia: condizioni e disponibilità in attesa di conferma dalla titolare.',
       },
       'chi-siamo': {
         title: 'Chi Siamo — Maison Karima Borgosesia',
@@ -244,22 +244,55 @@ export const IT_DICTIONARY: TranslationDictionary = {
       },
     },
     servizi: {
-      eyebrow: 'Sartoria e Noleggio',
+      eyebrow: 'Atelier e Sartoria',
       heading: 'Servizi',
-      lead: 'Servizi rilevati dal dominio esistente e dal profilo Instagram, predisposti per attivazione solo dopo conferma della titolare.',
+      lead: 'Accanto alla selezione di abbigliamento femminile e caftani marocchini, Maison Karima richiama nella propria identità il noleggio caftani e la cura sartoriale. Ogni dettaglio operativo viene pubblicato esclusivamente dopo conferma diretta della titolare.',
+      heroNote:
+        'I due servizi elencati di seguito risultano citati nei riferimenti ufficiali della boutique ma restano al momento da confermare per modalità, tempi e condizioni.',
+      overviewTitle: 'Stato dei servizi',
+      overviewNote:
+        'Nessuna tariffa, durata o condizione viene anticipata prima dell’approvazione ufficiale.',
+      pendingBadgeLabel: 'Da confermare con la titolare',
+      confirmedBadgeLabel: 'Servizio confermato',
+      pendingDetailsHeading: 'Aspetti in attesa di conferma',
+      sourceReferenceLabel: 'Riferimento rilevato',
       services: {
         'noleggio-caftani': {
+          eyebrow: 'Servizio 01 · Caftani',
           title: 'Noleggio caftani',
           description:
-            'Sezione architetturale predisposta. Condizioni, tariffe, cauzione e durata verranno pubblicate solo dopo conferma della titolare.',
+            'Il servizio di noleggio caftani è citato nel claim del sito esistente di Maison Karima. Per offrire informazioni puntuali e trasparenti alle clienti, le condizioni effettive del servizio sono attualmente in fase di definizione e conferma con la titolare.',
           statusLabel: 'In attesa di conferma operativa',
+          sourceLabel: 'Claim del sito esistente maisonkarima.com',
+          pendingItems: [
+            'Disponibilità effettiva dei capi destinati al noleggio',
+            'Tariffe, eventuale cauzione e durata del periodo di noleggio',
+            'Condizioni di consegna, prova e modalità di richiesta in boutique',
+          ],
+          atelierQuote: 'Tradizione marocchina · Cura dei dettagli',
         },
         'riparazioni-sartoriali': {
+          eyebrow: 'Servizio 02 · Sartoria',
           title: 'Riparazioni e modifiche sartoriali',
           description:
-            'Sezione architetturale predisposta. Tipologie di intervento e modalità di preventivo verranno pubblicate solo dopo conferma della titolare.',
+            'La dimensione sartoriale e le riparazioni sono richiamate sia nel claim del sito esistente sia nel profilo Instagram della boutique. Le tipologie di intervento effettivamente eseguite e le relative condizioni sono in attesa di conferma ufficiale.',
           statusLabel: 'In attesa di conferma operativa',
+          sourceLabel: 'Claim maisonkarima.com e profilo @maison_karima_sartoria_kaftan',
+          pendingItems: [
+            'Tipologie di interventi e modifiche sartoriali disponibili',
+            'Modalità di valutazione del capo e di preventivo in negozio',
+            'Condizioni operative e tempi indicativi concordati in boutique',
+          ],
+          atelierQuote: 'Precisione sartoriale · Attenzione al capo',
         },
+      },
+      contactCtaSection: {
+        eyebrow: 'Informazioni Dirette',
+        title: 'Verifica la disponibilità direttamente con la boutique',
+        description:
+          'Per sapere se il noleggio caftani o l’assistenza sartoriale siano attivi per le tue esigenze e concordare una visita in Viale Carlo Fassò 28 a Borgosesia, contattaci tramite la pagina Contatti o telefonicamente.',
+        primaryCta: 'Vai alla pagina Contatti',
+        secondaryCta: 'Chiama +39 329 921 6661',
       },
       ctaLabel: 'Richiedi informazioni in boutique',
     },

@@ -23,8 +23,9 @@ export const FR_DICTIONARY: TranslationDictionary = {
           'Caftans marocains, prêt-à-porter féminin et tenues de cérémonie de la boutique Maison Karima à Borgosesia.',
       },
       servizi: {
-        title: 'Services — Maison Karima',
-        description: 'Location de caftans et retouches sur mesure (en attente de confirmation).',
+        title: 'Services Couture et Location — Maison Karima',
+        description:
+          'Location de caftans et retouches couture chez Maison Karima à Borgosesia : conditions et disponibilités en attente de confirmation par la direction.',
       },
       'chi-siamo': {
         title: 'À propos — Maison Karima',
@@ -244,20 +245,55 @@ export const FR_DICTIONARY: TranslationDictionary = {
       },
     },
     servizi: {
-      eyebrow: 'Atelier et Location',
+      eyebrow: 'Atelier et Couture',
       heading: 'Services',
-      lead: 'Sections prévues en attente de confirmation opérationnelle.',
+      lead: 'Aux côtés de ses collections de prêt-à-porter féminin et de caftans marocains, Maison Karima évoque la location de caftans et le soin couture. Chaque modalité pratique est publiée uniquement après validation directe par la direction.',
+      heroNote:
+        'Les deux services présentés ci-dessous figurent dans les références officielles de la boutique, mais leurs modalités restent en attente de confirmation.',
+      overviewTitle: 'Statut des services',
+      overviewNote:
+        'Aucun tarif, délai ou condition n’est affiché avant confirmation officielle.',
+      pendingBadgeLabel: 'À confirmer avec la direction',
+      confirmedBadgeLabel: 'Service confirmé',
+      pendingDetailsHeading: 'Éléments en attente de confirmation',
+      sourceReferenceLabel: 'Référence identifiée',
       services: {
         'noleggio-caftani': {
+          eyebrow: 'Service 01 · Caftans',
           title: 'Location de caftans',
-          description: 'Conditions, tarifs et modalités à confirmer avant publication.',
+          description:
+            'Le service de location de caftans est mentionné dans l’accroche du site existant de Maison Karima. Afin de garantir des informations exactes et transparentes, les conditions effectives restent en cours de confirmation avec la direction.',
           statusLabel: 'En attente de confirmation',
+          sourceLabel: 'Accroche du site existant maisonkarima.com',
+          pendingItems: [
+            'Disponibilité effective des pièces proposées à la location',
+            'Tarifs, dépôt de garantie éventuel et durée de location',
+            'Conditions d’essayage, de remise et de demande en boutique',
+          ],
+          atelierQuote: 'Tradition marocaine · Soin du détail',
         },
         'riparazioni-sartoriali': {
+          eyebrow: 'Service 02 · Couture',
           title: 'Retouches et couture',
-          description: 'Types d’interventions et devis à confirmer avant publication.',
+          description:
+            'La dimension couture et les retouches apparaissent dans l’accroche du site existant ainsi que sur le profil Instagram de la boutique. Les interventions proposées et leurs conditions restent à confirmer officiellement.',
           statusLabel: 'En attente de confirmation',
+          sourceLabel: 'Accroche maisonkarima.com et profil @maison_karima_sartoria_kaftan',
+          pendingItems: [
+            'Types d’interventions et de retouches effectivement disponibles',
+            'Modalités d’évaluation de la pièce et de devis en boutique',
+            'Conditions pratiques et délais convenus sur place',
+          ],
+          atelierQuote: 'Précision couture · Respect de la matière',
         },
+      },
+      contactCtaSection: {
+        eyebrow: 'Renseignements Directs',
+        title: 'Vérifier la disponibilité directement auprès de la boutique',
+        description:
+          'Pour vérifier si la location de caftans ou l’accompagnement couture sont disponibles selon vos besoins et convenir d’une visite Viale Carlo Fassò 28 à Borgosesia, contactez-nous via la page Contact ou par téléphone.',
+        primaryCta: 'Accéder à la page Contact',
+        secondaryCta: 'Appeler +39 329 921 6661',
       },
       ctaLabel: 'Demander des informations',
     },
