@@ -154,9 +154,44 @@ export interface TranslationDictionary {
         'abbigliamento-donna': string;
         cerimonia: string;
       };
+      allCategoriesOverview: {
+        eyebrow: string;
+        title: string;
+        description: string;
+      };
+      categoryDetails: Record<
+        'caftani' | 'abbigliamento-donna' | 'cerimonia',
+        {
+          eyebrow: string;
+          description: string;
+        }
+      >;
       emptyCatalogTitle: string;
       emptyCatalogDescription: string;
-      schemaReadyLabel: string;
+      emptyState: {
+        eyebrow: string;
+        title: string;
+        categoryTitlePrefix: string;
+        description: string;
+        primaryCta: string;
+        secondaryCta: string;
+        resetFilterLabel: string;
+      };
+      linesSection: {
+        eyebrow: string;
+        title: string;
+        selectLabel: string;
+        selectedLabel: string;
+      };
+      productCard: {
+        availabilityLabels: Record<'vendita' | 'noleggio' | 'su-misura', string>;
+        priceOnRequestLabel: string;
+        inquiryLabel: string;
+        photoPendingTitle: string;
+        photoPendingDescription: string;
+        singleItemLabel: string;
+        pluralItemsLabel: string;
+      };
     };
     servizi: {
       eyebrow: string;

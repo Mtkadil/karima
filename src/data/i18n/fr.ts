@@ -19,7 +19,8 @@ export const FR_DICTIONARY: TranslationDictionary = {
       },
       collezioni: {
         title: 'Collections — Maison Karima',
-        description: 'Catalogue caftans marocains et prêt-à-porter féminin.',
+        description:
+          'Caftans marocains, prêt-à-porter féminin et tenues de cérémonie de la boutique Maison Karima à Borgosesia.',
       },
       servizi: {
         title: 'Services — Maison Karima',
@@ -176,20 +177,71 @@ export const FR_DICTIONARY: TranslationDictionary = {
       },
     },
     collezioni: {
-      eyebrow: 'Structure Catalogue',
+      eyebrow: 'Les Lignes de la Boutique',
       heading: 'Collections',
-      lead: 'Architecture modulaire connectée à l’archive produits.',
+      lead: 'Une sélection dédiée aux caftans marocains, au prêt-à-porter féminin et aux tenues de cérémonie. Des pièces choisies pour la justesse des coupes, les matières et le soin du détail à Borgosesia.',
       categoriesTitle: 'Filtrer par catégorie',
-      allCategoriesLabel: 'Toutes les catégories',
+      allCategoriesLabel: 'Toutes',
       categoryNames: {
         caftani: 'Caftans marocains',
         'abbigliamento-donna': 'Prêt-à-porter féminin',
         cerimonia: 'Cérémonie',
       },
-      emptyCatalogTitle: 'Catalogue en attente de photographies réelles',
+      allCategoriesOverview: {
+        eyebrow: 'Vue d’ensemble',
+        title: 'Toutes les lignes Maison Karima',
+        description:
+          'Caftans de tradition marocaine, prêt-à-porter féminin du quotidien et créations pensées pour les grands événements.',
+      },
+      categoryDetails: {
+        caftani: {
+          eyebrow: 'Tradition Marocaine',
+          description:
+            'Caftans marocains sélectionnés pour allier savoir-faire traditionnel, élégance des lignes et allure contemporaine.',
+        },
+        'abbigliamento-donna': {
+          eyebrow: 'Collection Femme',
+          description:
+            'Pièces de prêt-à-porter féminin pensées pour le vestiaire quotidien et différentes envies de style.',
+        },
+        cerimonia: {
+          eyebrow: 'Occasions Spéciales',
+          description:
+            'Propositions dédiées aux célébrations et événements particuliers, accompagnées d’un conseil attentif en boutique.',
+        },
+      },
+      emptyCatalogTitle: 'Catalogue en préparation',
       emptyCatalogDescription:
-        'Aucun produit ou tarif fictif ajouté en Phase 1. Le schéma de données est prêt.',
-      schemaReadyLabel: 'Schéma de données produit actif',
+        'Les photographies et fiches détaillées des modèles seront publiées prochainement.',
+      emptyState: {
+        eyebrow: 'Sélection en boutique',
+        title: 'Découvrir les pièces disponibles directement en boutique',
+        categoryTitlePrefix: 'Pièces disponibles en boutique ·',
+        description:
+          'Le catalogue photographique en ligne est en cours de préparation. Pour connaître les modèles actuellement disponibles et les tailles en magasin, contactez-nous ou rendez-nous visite Viale Carlo Fassò 28 à Borgosesia.',
+        primaryCta: 'Contacter la boutique',
+        secondaryCta: 'Appeler +39 329 921 6661',
+        resetFilterLabel: 'Voir toutes les catégories',
+      },
+      linesSection: {
+        eyebrow: 'Explorer par ligne',
+        title: 'Les trois univers de la boutique',
+        selectLabel: 'Filtrer cette ligne',
+        selectedLabel: 'Catégorie active',
+      },
+      productCard: {
+        availabilityLabels: {
+          vendita: 'Vente',
+          noleggio: 'Location',
+          'su-misura': 'Sur mesure',
+        },
+        priceOnRequestLabel: 'Prix sur demande',
+        inquiryLabel: 'Demander des informations',
+        photoPendingTitle: 'Photographie à venir',
+        photoPendingDescription: 'Visuel du modèle bientôt disponible.',
+        singleItemLabel: '1 pièce disponible',
+        pluralItemsLabel: 'pièces disponibles',
+      },
     },
     servizi: {
       eyebrow: 'Atelier et Location',

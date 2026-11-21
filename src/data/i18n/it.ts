@@ -17,7 +17,7 @@ export const IT_DICTIONARY: TranslationDictionary = {
       collezioni: {
         title: 'Collezioni — Maison Karima Borgosesia',
         description:
-          'Struttura catalogo per abbigliamento femminile, caftani marocchini e cerimonia presso Maison Karima a Borgosesia.',
+          'Caftani marocchini, abbigliamento femminile e proposte da cerimonia della boutique Maison Karima a Borgosesia (VC).',
       },
       servizi: {
         title: 'Servizi Sartoria e Noleggio — Maison Karima',
@@ -177,20 +177,71 @@ export const IT_DICTIONARY: TranslationDictionary = {
       },
     },
     collezioni: {
-      eyebrow: 'Struttura Catalogo',
+      eyebrow: 'Le Linee della Boutique',
       heading: 'Collezioni',
-      lead: 'Architettura modulare collegata all’archivio dati prodotti e alle categorie definite nel brief.',
+      lead: 'Una selezione dedicata ai caftani marocchini, all’abbigliamento femminile e alle proposte da cerimonia. Capi curati nelle linee, nei tessuti e nella vestibilità, da scoprire nella boutique di Borgosesia.',
       categoriesTitle: 'Filtra per categoria',
-      allCategoriesLabel: 'Tutte le categorie',
+      allCategoriesLabel: 'Tutte',
       categoryNames: {
         caftani: 'Caftani marocchini',
-        'abbigliamento-donna': 'Abbigliamento femminile',
+        'abbigliamento-donna': 'Abbigliamento donna',
         cerimonia: 'Cerimonia',
       },
-      emptyCatalogTitle: 'Catalogo in attesa di acquisizione fotografica',
+      allCategoriesOverview: {
+        eyebrow: 'Visione d’insieme',
+        title: 'Tutte le linee Maison Karima',
+        description:
+          'Caftani della tradizione marocchina, abbigliamento femminile per ogni giorno e creazioni dedicate alle occasioni speciali.',
+      },
+      categoryDetails: {
+        caftani: {
+          eyebrow: 'Tradizione Marocchina',
+          description:
+            'Caftani marocchini selezionati per valorizzare la tradizione sartoriale con gusto contemporaneo, attenzione ai dettagli e raffinatezza delle linee.',
+        },
+        'abbigliamento-donna': {
+          eyebrow: 'Collezione Donna',
+          description:
+            'Proposte di abbigliamento femminile dedicate al guardaroba quotidiano e a diverse esigenze di stile, scelte con cura in boutique.',
+        },
+        cerimonia: {
+          eyebrow: 'Occasioni Speciali',
+          description:
+            'Proposte pensate per ricorrenze ed eventi speciali, con consulenza dedicata per individuare il capo più adatto.',
+        },
+      },
+      emptyCatalogTitle: 'Catalogo digitale in allestimento',
       emptyCatalogDescription:
-        'Nessun prodotto o prezzo inventato in questa fase. Lo schema dati è pronto per ricevere codice articolo, modello, categoria, disponibilità (vendita/noleggio/su misura), tessuti, taglie, colori e galleria fotografica reale.',
-      schemaReadyLabel: 'Schema dati prodotto conforme al brief v1.1 attivo',
+        'Le fotografie e le schede dei singoli capi saranno pubblicate prossimamente.',
+      emptyState: {
+        eyebrow: 'Selezione in boutique',
+        title: 'Scopri i capi disponibili direttamente in boutique',
+        categoryTitlePrefix: 'Proposte disponibili in boutique ·',
+        description:
+          'Il catalogo fotografico online è attualmente in fase di preparazione. Per conoscere i capi disponibili, le taglie e le nuove proposte, ti invitiamo a contattarci o a visitarci in Viale Carlo Fassò 28 a Borgosesia.',
+        primaryCta: 'Contatta la boutique',
+        secondaryCta: 'Chiama +39 329 921 6661',
+        resetFilterLabel: 'Vedi tutte le categorie',
+      },
+      linesSection: {
+        eyebrow: 'Esplora per linea',
+        title: 'Le tre anime della boutique',
+        selectLabel: 'Filtra questa linea',
+        selectedLabel: 'Categoria attiva',
+      },
+      productCard: {
+        availabilityLabels: {
+          vendita: 'Vendita',
+          noleggio: 'Noleggio',
+          'su-misura': 'Su misura',
+        },
+        priceOnRequestLabel: 'Prezzo su richiesta',
+        inquiryLabel: 'Richiedi informazioni',
+        photoPendingTitle: 'Fotografia in arrivo',
+        photoPendingDescription: 'Immagine del capo disponibile a breve.',
+        singleItemLabel: '1 capo disponibile',
+        pluralItemsLabel: 'capi disponibili',
+      },
     },
     servizi: {
       eyebrow: 'Sartoria e Noleggio',

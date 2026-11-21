@@ -40,6 +40,22 @@ export function getFeaturedProducts(products: readonly Product[]): Product[] {
   return products.filter((product) => product.visibile && product.in_evidenza);
 }
 
+export function hasAuthorizedPrice(
+  product: Pick<Product, 'prezzo' | 'mostra_prezzo'>
+): boolean {
+  return product.mostra_prezzo && product.prezzo !== null;
+}
+
+export function buildCategoryFilterUrl(
+  basePath: string,
+  category: CategoryFilter
+): string {
+  if (category === 'all') {
+    return basePath;
+  }
+  return `${basePath}?categoria=${encodeURIComponent(category)}`;
+}
+
 export function formatProductPrice(
   prezzo: number | null,
   mostraPrezzo: boolean,

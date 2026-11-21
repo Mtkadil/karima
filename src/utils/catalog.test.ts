@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import { PRODUCTS_CATALOG } from '../data/catalog';
 import type { Product } from '../types/catalog';
 import {
+  buildCategoryFilterUrl,
   filterVisibleProducts,
   formatProductPrice,
   getFeaturedProducts,
+  hasAuthorizedPrice,
   resolveCategoryFromSearch,
 } from './catalog';
 
@@ -68,6 +70,25 @@ test('formatProductPrice respects mostra_prezzo and null price rules', () => {
   const formatted = formatProductPrice(240, true, 'EUR');
   assert.match(formatted, /240/);
   assert.match(formatted, /€/);
+});
+
+test('hasAuthorizedPrice returns true only when mostra_prezzo is true and price is present', () => {
+  assert.equal(hasAuthorizedPrice({ prezzo: null, mostra_prezzo: true }), false);
+  assert.equal(hasAuthorizedPrice({ prezzo: 320, mostra_prezzo: false }), false);
+  assert.equal(hasAuthorizedPrice({ prezzo: 320, mostra_prezzo: true }), true);
+});
+
+test('buildCategoryFilterUrl preserves IT and FR base paths cleanly', () => {
+  assert.equal(buildCategoryFilterUrl('/collezioni', 'all'), '/collezioni');
+  assert.equal(
+    buildCategoryFilterUrl('/collezioni', 'caftani'),
+    '/collezioni?categoria=caftani'
+  );
+  assert.equal(
+    buildCategoryFilterUrl('/fr/collections', 'cerimonia'),
+    '/fr/collections?categoria=cerimonia'
+  );
+  assert.equal(buildCategoryFilterUrl('/fr/collections', 'all'), '/fr/collections');
 });
 
 test('resolveCategoryFromSearch selects valid categories from URL query string', () => {
