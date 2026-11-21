@@ -29,7 +29,8 @@ export const FR_DICTIONARY: TranslationDictionary = {
       },
       'chi-siamo': {
         title: 'À propos — Maison Karima',
-        description: 'Histoire de la boutique Maison Karima à Borgosesia.',
+        description:
+          'Identité, univers esthétique et adresse de la boutique Maison Karima à Borgosesia : prêt-à-porter féminin et caftans marocains.',
       },
       contatti: {
         title: 'Contact et Accès — Maison Karima',
@@ -298,23 +299,103 @@ export const FR_DICTIONARY: TranslationDictionary = {
       ctaLabel: 'Demander des informations',
     },
     chiSiamo: {
-      eyebrow: 'Identité',
+      eyebrow: 'La Boutique · Borgosesia',
       heading: 'À propos',
-      lead: 'Page prévue pour l’histoire officielle de Maison Karima à Borgosesia.',
-      plannedBlocks: [
-        {
-          title: '01. Histoire de la boutique',
-          requirement: 'Texte approuvé à fournir avant mise en ligne.',
-        },
-        {
-          title: '02. Savoir-faire et tissus',
-          requirement: 'Présentation des matières et broderies.',
-        },
-        {
-          title: '03. Galerie boutique',
-          requirement: 'Photographies réelles autorisées.',
-        },
-      ],
+      lead: 'Maison Karima est une boutique de prêt-à-porter féminin et de caftans marocains située à Borgosesia, pensée pour accueillir chaque cliente dans un cadre soigné, chaleureux et attentif aux détails.',
+      heroHighlight: 'Viale Carlo Fassò, 28 · Borgosesia (VC)',
+      identity: {
+        eyebrow: 'Identité Maison Karima',
+        title: 'Rencontre entre tradition marocaine et style contemporain',
+        body: 'La boutique s’articule autour d’une double vocation : proposer du prêt-à-porter féminin à l’allure actuelle tout en mettant en valeur l’univers du caftan marocain. Un équilibre guidé par la justesse des lignes, le soin des finitions et la recherche du tombé le plus adapté.',
+        storySlotLabel: 'Histoire officielle à venir',
+        storySlotNote:
+          'Cet espace éditorial est conçu pour accueillir le récit officiel de la boutique et de son parcours dès sa validation par la direction.',
+        pillars: [
+          {
+            label: '01 · Sélection',
+            title: 'Prêt-à-porter féminin et caftans',
+            description:
+              'Des propositions pensées aussi bien pour le quotidien que pour les moments d’exception.',
+          },
+          {
+            label: '02 · Harmonie',
+            title: 'Soin des lignes et tombé',
+            description:
+              'Une attention constante portée aux proportions, à l’allure et au confort de chaque pièce.',
+          },
+          {
+            label: '03 · Accueil',
+            title: 'Écoute et conseil en boutique',
+            description:
+              'Un accueil attentif et discret pour accompagner chaque visiteuse dans son choix.',
+          },
+        ],
+      },
+      tradition: {
+        eyebrow: 'Tradition et Détails',
+        title: 'L’univers esthétique du caftan marocain',
+        body: 'Dans la tradition vestimentaire marocaine, le caftan incarne une élégance féminine intemporelle, reconnaissable à la noblesse visuelle des étoffes, à la finesse des broderies et à l’harmonie des ornements. Maison Karima célèbre cet héritage esthétique avec un regard contemporain.',
+        aestheticPoints: [
+          {
+            title: 'Étoffes et tombé',
+            description:
+              'Des matières choisies dans l’esprit du caftan pour souligner la fluidité, l’éclat et l’allure.',
+          },
+          {
+            title: 'Broderies et ornements',
+            description:
+              'Des motifs et finitions décoratives inspirés du patrimoine esthétique marocain, tout en retenue.',
+          },
+          {
+            title: 'Équilibre contemporain',
+            description:
+              'Un dialogue constant entre inspiration traditionnelle et recherche actuelle d’élégance.',
+          },
+        ],
+        ornamentCaption: 'Élégance marocaine · Regard contemporain',
+        ornamentSubcaption: 'Maison Karima · Borgosesia',
+      },
+      territory: {
+        eyebrow: 'Ancrage Local',
+        title: 'La boutique à Borgosesia',
+        body: 'Située Viale Carlo Fassò, 28, Maison Karima accueille les clientes à Borgosesia et dans la Valsesia pour découvrir de près les couleurs, les matières et les pièces de prêt-à-porter féminin et de caftans marocains.',
+        addressLabel: 'Adresse vérifiée',
+        welcomeNoteLabel: 'Visite en boutique',
+        welcomeNote:
+          'Espace accueillant avec parking accessible en fauteuil roulant et possibilité de visites rapides.',
+        ctaLabel: 'Accès et contact',
+      },
+      gallery: {
+        eyebrow: 'Atmosphère et Espaces',
+        title: 'Galerie de la boutique',
+        lead: 'Cet espace est prêt à accueillir les photographies officielles de la boutique, des vitrines et de l’ambiance intérieure dès leur validation par la direction.',
+        badgeText: 'Photographie officielle à venir',
+        slots: [
+          {
+            title: 'Façade et vitrine',
+            description:
+              'Emplacement réservé à la photographie extérieure de la boutique Viale Carlo Fassò, 28 à Borgosesia.',
+          },
+          {
+            title: 'Espace intérieur',
+            description:
+              'Emplacement réservé aux vues réelles de la boutique et de l’espace dédié à l’accueil.',
+          },
+          {
+            title: 'Détails et lignes',
+            description:
+              'Emplacement réservé aux clichés autorisés des caftans marocains et du prêt-à-porter féminin.',
+          },
+        ],
+      },
+      finalCta: {
+        eyebrow: 'Poursuivre la visite',
+        title: 'Découvrir les collections ou nous rendre visite en boutique',
+        description:
+          'Parcourez les lignes présentées dans la rubrique Collections ou contactez-nous pour connaître les pièces disponibles à Borgosesia.',
+        collectionsCta: 'Découvrir les collections',
+        contactsCta: 'Contacter la boutique',
+      },
     },
     contatti: {
       eyebrow: 'Coordonnées vérifiées',

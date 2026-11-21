@@ -237,7 +237,56 @@ export interface TranslationDictionary {
       eyebrow: string;
       heading: string;
       lead: string;
-      plannedBlocks: readonly { title: string; requirement: string }[];
+      heroHighlight: string;
+      identity: {
+        eyebrow: string;
+        title: string;
+        body: string;
+        storySlotLabel: string;
+        storySlotNote: string;
+        pillars: readonly {
+          label: string;
+          title: string;
+          description: string;
+        }[];
+      };
+      tradition: {
+        eyebrow: string;
+        title: string;
+        body: string;
+        aestheticPoints: readonly {
+          title: string;
+          description: string;
+        }[];
+        ornamentCaption: string;
+        ornamentSubcaption: string;
+      };
+      territory: {
+        eyebrow: string;
+        title: string;
+        body: string;
+        addressLabel: string;
+        welcomeNoteLabel: string;
+        welcomeNote: string;
+        ctaLabel: string;
+      };
+      gallery: {
+        eyebrow: string;
+        title: string;
+        lead: string;
+        badgeText: string;
+        slots: readonly {
+          title: string;
+          description: string;
+        }[];
+      };
+      finalCta: {
+        eyebrow: string;
+        title: string;
+        description: string;
+        collectionsCta: string;
+        contactsCta: string;
+      };
     };
     contatti: {
       eyebrow: string;
