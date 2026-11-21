@@ -13,31 +13,43 @@ import { getNavigationItems, getRoutePath, resolvePath } from '../utils/routing'
 
 interface RouterContextValue {
   pathname: string;
+  search: string;
   locale: Locale;
   routeId: RouteId | null;
   isDesignSystemPreview: boolean;
   t: TranslationDictionary;
   navItems: NavItem[];
   navigate: (to: string) => void;
+  replaceUrl: (to: string) => void;
   navigateToRoute: (routeId: RouteId, targetLocale?: Locale) => void;
 }
 
 const RouterContext = createContext<RouterContextValue | null>(null);
 
+function getWindowLocationUrl(): string {
+  if (typeof window === 'undefined') {
+    return '/';
+  }
+  return `${window.location.pathname}${window.location.search}`;
+}
+
 export function RouterProvider({ children }: { children: ReactNode }) {
-  const [pathname, setPathname] = useState<string>(() =>
-    typeof window !== 'undefined' ? window.location.pathname : '/'
-  );
+  const [locationUrl, setLocationUrl] = useState<string>(getWindowLocationUrl);
 
   useEffect(() => {
     const handlePopState = () => {
-      setPathname(window.location.pathname);
+      setLocationUrl(getWindowLocationUrl());
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const resolved = useMemo(() => resolvePath(pathname), [pathname]);
+  const search = useMemo(() => {
+    const queryIndex = locationUrl.indexOf('?');
+    return queryIndex >= 0 ? locationUrl.slice(queryIndex) : '';
+  }, [locationUrl]);
+
+  const resolved = useMemo(() => resolvePath(locationUrl), [locationUrl]);
   const t = useMemo(() => getDictionary(resolved.locale), [resolved.locale]);
   const navItems = useMemo(
     () => getNavigationItems(t, resolved.locale),
@@ -52,11 +64,21 @@ export function RouterProvider({ children }: { children: ReactNode }) {
     if (typeof window === 'undefined') {
       return;
     }
-    if (window.location.pathname !== to) {
+    if (getWindowLocationUrl() !== to) {
       window.history.pushState({}, '', to);
-      setPathname(to);
+      setLocationUrl(to);
     }
     window.scrollTo({ top: 0, behavior: 'auto' });
+  }, []);
+
+  const replaceUrl = useCallback((to: string) => {
+    if (typeof window === 'undefined') {
+      return;
+    }
+    if (getWindowLocationUrl() !== to) {
+      window.history.replaceState({}, '', to);
+      setLocationUrl(to);
+    }
   }, []);
 
   const navigateToRoute = useCallback(
@@ -70,15 +92,17 @@ export function RouterProvider({ children }: { children: ReactNode }) {
   const value = useMemo<RouterContextValue>(
     () => ({
       pathname: resolved.normalizedPath,
+      search,
       locale: resolved.locale,
       routeId: resolved.routeId,
       isDesignSystemPreview: resolved.isDesignSystemPreview,
       t,
       navItems,
       navigate,
+      replaceUrl,
       navigateToRoute,
     }),
-    [resolved, t, navItems, navigate, navigateToRoute]
+    [resolved, search, t, navItems, navigate, replaceUrl, navigateToRoute]
   );
 
   return <RouterContext.Provider value={value}>{children}</RouterContext.Provider>;

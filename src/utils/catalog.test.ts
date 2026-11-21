@@ -6,6 +6,7 @@ import {
   filterVisibleProducts,
   formatProductPrice,
   getFeaturedProducts,
+  resolveCategoryFromSearch,
 } from './catalog';
 
 test('initial catalog archive contains no fabricated products in Phase 1', () => {
@@ -67,4 +68,32 @@ test('formatProductPrice respects mostra_prezzo and null price rules', () => {
   const formatted = formatProductPrice(240, true, 'EUR');
   assert.match(formatted, /240/);
   assert.match(formatted, /€/);
+});
+
+test('resolveCategoryFromSearch selects valid categories from URL query string', () => {
+  assert.equal(resolveCategoryFromSearch('?categoria=caftani'), 'caftani');
+  assert.equal(
+    resolveCategoryFromSearch('?categoria=abbigliamento-donna'),
+    'abbigliamento-donna'
+  );
+  assert.equal(resolveCategoryFromSearch('?categoria=cerimonia'), 'cerimonia');
+  assert.equal(
+    resolveCategoryFromSearch('?utm_source=home&categoria=cerimonia'),
+    'cerimonia'
+  );
+  assert.equal(resolveCategoryFromSearch('categoria=caftani'), 'caftani');
+});
+
+test('resolveCategoryFromSearch falls back to all when categoria is missing', () => {
+  assert.equal(resolveCategoryFromSearch(''), 'all');
+  assert.equal(resolveCategoryFromSearch('?'), 'all');
+  assert.equal(resolveCategoryFromSearch('?altro=caftani'), 'all');
+  assert.equal(resolveCategoryFromSearch('?categoria='), 'all');
+  assert.equal(resolveCategoryFromSearch('?categoria=%20%20'), 'all');
+});
+
+test('resolveCategoryFromSearch falls back to all when categoria is invalid', () => {
+  assert.equal(resolveCategoryFromSearch('?categoria=inesistente'), 'all');
+  assert.equal(resolveCategoryFromSearch('?categoria=all'), 'all');
+  assert.equal(resolveCategoryFromSearch('?categoria=CAFTANI'), 'all');
 });

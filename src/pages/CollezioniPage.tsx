@@ -1,7 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { CATALOG_CATEGORIES, PRODUCTS_CATALOG } from '../data/catalog';
 import { useRouter } from '../context/RouterContext';
-import { filterVisibleProducts, type CategoryFilter } from '../utils/catalog';
+import {
+  filterVisibleProducts,
+  resolveCategoryFromSearch,
+  type CategoryFilter,
+} from '../utils/catalog';
 import { Container } from '../components/ui/Container';
 import { Divider } from '../components/ui/Divider';
 import { Heading } from '../components/ui/Heading';
@@ -9,9 +13,24 @@ import { PlaceholderFrame } from '../components/ui/PlaceholderFrame';
 import { Section } from '../components/ui/Section';
 
 export function CollezioniPage() {
-  const { t } = useRouter();
-  const [activeCategory, setActiveCategory] = useState<CategoryFilter>('all');
+  const { t, pathname, search, replaceUrl } = useRouter();
   const page = t.pages.collezioni;
+
+  const activeCategory = useMemo(
+    () => resolveCategoryFromSearch(search, CATALOG_CATEGORIES),
+    [search]
+  );
+
+  const handleCategorySelect = useCallback(
+    (category: CategoryFilter) => {
+      const nextUrl =
+        category === 'all'
+          ? pathname
+          : `${pathname}?categoria=${encodeURIComponent(category)}`;
+      replaceUrl(nextUrl);
+    },
+    [pathname, replaceUrl]
+  );
 
   const visibleProducts = useMemo(
     () => filterVisibleProducts(PRODUCTS_CATALOG, activeCategory),
@@ -39,7 +58,7 @@ export function CollezioniPage() {
           >
             <button
               type="button"
-              onClick={() => setActiveCategory('all')}
+              onClick={() => handleCategorySelect('all')}
               aria-pressed={activeCategory === 'all'}
               className={`min-h-[44px] px-4 py-2 text-sm font-medium whitespace-nowrap shrink-0 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux cursor-pointer ${
                 activeCategory === 'all'
@@ -55,7 +74,7 @@ export function CollezioniPage() {
                 <button
                   key={category.id}
                   type="button"
-                  onClick={() => setActiveCategory(category.id)}
+                  onClick={() => handleCategorySelect(category.id)}
                   aria-pressed={isSelected}
                   className={`min-h-[44px] px-4 py-2 text-sm font-medium whitespace-nowrap shrink-0 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux cursor-pointer ${
                     isSelected
