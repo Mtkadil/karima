@@ -1,7 +1,6 @@
 import type { MouseEvent } from 'react';
 import { BUSINESS_INFO } from '../../data/business';
 import { useRouter } from '../../context/RouterContext';
-import { DESIGN_SYSTEM_PREVIEW_PATH } from '../../utils/routing';
 import { BrandMark } from '../ui/BrandMark';
 import { Container } from '../ui/Container';
 
@@ -61,15 +60,6 @@ export function Footer() {
                   </a>
                 </li>
               ))}
-              <li className="pt-1">
-                <a
-                  href={DESIGN_SYSTEM_PREVIEW_PATH}
-                  onClick={(event) => handleNavClick(event, DESIGN_SYSTEM_PREVIEW_PATH)}
-                  className="text-xs font-medium text-bordeaux underline-offset-4 hover:underline"
-                >
-                  Anteprima Design System (Fase 2)
-                </a>
-              </li>
             </ul>
           </div>
 

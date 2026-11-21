@@ -195,7 +195,7 @@ export function DesignSystemPreviewPage() {
                   <p className="mt-1 max-w-[65ch] text-base leading-relaxed text-antracite-muted">
                     Testo progettato per un’elevata leggibilità su smartphone e
                     desktop, con interlinea ariosa (1.6) e contrasto pieno
-                    Antracite su Avorio. Orari: <span className="tabular-nums font-medium text-antracite">09:00–12:00 · 15:30–19:00</span>.
+                    Antracite su Avorio. <span className="tabular-nums font-medium text-antracite">Orari da confermare</span>.
                   </p>
                 </div>
               </div>

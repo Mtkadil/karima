@@ -35,6 +35,17 @@ export function SeoHead() {
     upsertMetaTag('name', 'twitter:title', title);
     upsertMetaTag('name', 'twitter:description', description);
 
+    if (isDesignSystemPreview) {
+      upsertMetaTag('name', 'robots', 'noindex, nofollow');
+    } else {
+      const robotsMeta = document.head.querySelector<HTMLMetaElement>(
+        'meta[name="robots"]'
+      );
+      if (robotsMeta) {
+        robotsMeta.remove();
+      }
+    }
+
     if (typeof window !== 'undefined') {
       const canonicalUrl = `${window.location.origin}${pathname}`;
       upsertMetaTag('property', 'og:url', canonicalUrl);
@@ -58,7 +69,7 @@ export function SeoHead() {
       document.head.appendChild(scriptEl);
     }
     scriptEl.textContent = JSON.stringify(buildClothingStoreJsonLd(BUSINESS_INFO));
-  }, [title, description, pathname]);
+  }, [title, description, pathname, isDesignSystemPreview]);
 
   return null;
 }
