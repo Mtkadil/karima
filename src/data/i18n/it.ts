@@ -299,55 +299,55 @@ export const IT_DICTIONARY: TranslationDictionary = {
     chiSiamo: {
       eyebrow: 'La Boutique · Borgosesia',
       heading: 'Chi siamo',
-      lead: 'Maison Karima è una boutique di abbigliamento femminile e caftani marocchini nel cuore di Borgosesia, pensata per accogliere ogni cliente in un ambiente curato, riservato e attento ai dettagli.',
+      lead: 'Maison Karima è una boutique di abbigliamento femminile e caftani marocchini a Borgosesia, uno spazio curato dedicato all’eleganza femminile.',
       heroHighlight: 'Viale Carlo Fassò, 28 · Borgosesia (VC)',
       identity: {
         eyebrow: 'Identità Maison Karima',
         title: 'Incontro tra tradizione marocchina e stile contemporaneo',
-        body: 'La boutique nasce attorno a una doppia vocazione: proporre capi di abbigliamento femminile dal gusto attuale e custodire il fascino del caftano marocchino. Un equilibrio che privilegia l’armonia delle linee, la cura dei dettagli e la ricerca della vestibilità più adatta a ogni occasione.',
-        storySlotLabel: 'Storia ufficiale in aggiornamento',
+        body: 'Maison Karima unisce proposte di abbigliamento femminile al fascino senza tempo del caftano marocchino. Un’identità dedicata all’eleganza, all’armonia delle linee e alla cura dell’immagine.',
+        storySlotLabel: 'Storia ufficiale da approvare',
         storySlotNote:
-          'Questo spazio editoriale è predisposto per accogliere il racconto ufficiale della boutique e della sua fondazione non appena sarà approvato dalla titolare.',
+          'Questo spazio editoriale è predisposto per accogliere la storia ufficiale della boutique non appena sarà approvata dalla titolare.',
         pillars: [
           {
-            label: '01 · Selezione',
+            label: '01 · Proposta',
             title: 'Abbigliamento femminile e caftani',
             description:
-              'Proposte pensate sia per il guardaroba quotidiano sia per momenti speciali e ricorrenze.',
+              'Una proposta dedicata a chi cerca eleganza femminile e capi ispirati alla tradizione marocchina.',
           },
           {
-            label: '02 · Armonia',
-            title: 'Cura delle linee e vestibilità',
+            label: '02 · Stile',
+            title: 'Equilibrio tra tradizione e attualità',
             description:
-              'Attenzione alle proporzioni, ai volumi e alla resa di ogni capo indossato.',
+              'Un dialogo visivo tra l’estetica classica del caftano e il gusto contemporaneo.',
           },
           {
-            label: '03 · Accoglienza',
-            title: 'Ascolto e consulenza in boutique',
+            label: '03 · Boutique',
+            title: 'Accoglienza in negozio',
             description:
-              'Un’esperienza di visita calma e personale, dedicata ad accompagnare ogni scelta con discrezione.',
+              'Un ambiente riservato a Borgosesia dove scoprire da vicino le collezioni presenti in boutique.',
           },
         ],
       },
       tradition: {
         eyebrow: 'Tradizione e Dettagli',
         title: 'L’universo estetico del caftano marocchino',
-        body: 'Nella cultura vestimentaria marocchina, il caftano rappresenta un simbolo di eleganza femminile, riconoscibile per la ricchezza visiva dei tessuti, l’equilibrio dei ricami e la cura delle finiture. Maison Karima valorizza questa eredità estetica affiancandola a una sensibilità contemporanea.',
+        body: 'Nella cultura vestimentaria del Marocco, il caftano è riconosciuto come simbolo di eleganza femminile, espressione di un’estetica raffinata in cui tessuti, ricami e proporzioni dialogano in armonia. Maison Karima trae ispirazione da questo universo affiancandolo a una sensibilità contemporanea.',
         aestheticPoints: [
           {
-            title: 'Tessuti e caduta',
+            title: 'Tessuti e tradizione',
             description:
-              'Materie selezionate nella tradizione del caftano per esaltare fluidità, luminosità e portamento.',
+              'Nell’immaginario del caftano marocchino, la varietà dei tessuti e il gioco delle linee definiscono una silhouette iconica e femminile.',
           },
           {
-            title: 'Ricami e ornamenti',
+            title: 'Ricami e dettagli',
             description:
-              'Dettagli decorativi e motivi ispirati al patrimonio estetico marocchino, espressione di raffinatezza senza eccessi.',
+              'I motivi decorativi e i ricami caratteristici della tradizione marocchina evocano un gusto ricercato e senza tempo.',
           },
           {
-            title: 'Equilibrio contemporaneo',
+            title: 'Gusto contemporaneo',
             description:
-              'Un dialogo costante tra ispirazione tradizionale ed esigenze attuali di eleganza e comodità.',
+              'Il confronto tra codici tradizionali ed estetica attuale rende il caftano adatto a sensibilità ed esigenze moderne.',
           },
         ],
         ornamentCaption: 'Eleganza marocchina · Sensibilità contemporanea',
@@ -356,17 +356,17 @@ export const IT_DICTIONARY: TranslationDictionary = {
       territory: {
         eyebrow: 'Il Territorio',
         title: 'La boutique a Borgosesia',
-        body: 'Situata in Viale Carlo Fassò, 28, Maison Karima rappresenta un punto di riferimento locale per chi cerca abbigliamento femminile e caftani marocchini a Borgosesia e in Valsesia. L’accoglienza diretta in negozio permette di osservare da vicino colori, tessuti e proposte disponibili.',
+        body: 'Situata in Viale Carlo Fassò, 28, Maison Karima accoglie le clienti a Borgosesia per scoprire abbigliamento femminile e caftani marocchini. La visita in negozio permette di osservare direttamente le proposte disponibili.',
         addressLabel: 'Indirizzo verificato',
         welcomeNoteLabel: 'Visita in boutique',
         welcomeNote:
-          'Spazio accessibile con parcheggio accessibile in sedia a rotelle e possibilità di visite rapide.',
+          'Parcheggio accessibile in sedia a rotelle e possibilità di visite rapide.',
         ctaLabel: 'Indicazioni e contatti',
       },
       gallery: {
         eyebrow: 'Atmosfera e Spazi',
         title: 'Galleria della boutique',
-        lead: 'Quest’area è pronta a ospitare le fotografie ufficiali degli ambienti, delle vetrine e dei dettagli di Maison Karima appena approvate dalla titolare.',
+        lead: 'Quest’area è predisposta per ospitare le fotografie ufficiali della boutique non appena saranno approvate dalla titolare.',
         badgeText: 'Immagine ufficiale in arrivo',
         slots: [
           {
@@ -375,14 +375,14 @@ export const IT_DICTIONARY: TranslationDictionary = {
               'Spazio riservato alla fotografia esterna della boutique in Viale Carlo Fassò, 28 a Borgosesia.',
           },
           {
-            title: 'Interni e accoglienza',
+            title: 'Interni della boutique',
             description:
-              'Spazio riservato alle immagini reali dell’ambiente espositivo e dell’area dedicata alla scelta dei capi.',
+              'Spazio riservato alle immagini reali e autorizzate dell’ambiente interno del negozio.',
           },
           {
             title: 'Dettagli e collezioni',
             description:
-              'Spazio riservato a scatti autorizzati dei caftani marocchini e delle proposte di abbigliamento femminile.',
+              'Spazio riservato a scatti autorizzati dedicati alle proposte della boutique.',
           },
         ],
       },

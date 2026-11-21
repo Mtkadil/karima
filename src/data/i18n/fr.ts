@@ -301,74 +301,74 @@ export const FR_DICTIONARY: TranslationDictionary = {
     chiSiamo: {
       eyebrow: 'La Boutique · Borgosesia',
       heading: 'À propos',
-      lead: 'Maison Karima est une boutique de prêt-à-porter féminin et de caftans marocains située à Borgosesia, pensée pour accueillir chaque cliente dans un cadre soigné, chaleureux et attentif aux détails.',
+      lead: 'Maison Karima est une boutique de prêt-à-porter féminin et de caftans marocains à Borgosesia, un espace soigné dédié à l’élégance féminine.',
       heroHighlight: 'Viale Carlo Fassò, 28 · Borgosesia (VC)',
       identity: {
         eyebrow: 'Identité Maison Karima',
         title: 'Rencontre entre tradition marocaine et style contemporain',
-        body: 'La boutique s’articule autour d’une double vocation : proposer du prêt-à-porter féminin à l’allure actuelle tout en mettant en valeur l’univers du caftan marocain. Un équilibre guidé par la justesse des lignes, le soin des finitions et la recherche du tombé le plus adapté.',
-        storySlotLabel: 'Histoire officielle à venir',
+        body: 'Maison Karima réunit des propositions de prêt-à-porter féminin et le charme intemporel du caftan marocain. Une identité dédiée à l’élégance, à l’harmonie des lignes et au soin de l’image.',
+        storySlotLabel: 'Histoire officielle à approuver',
         storySlotNote:
-          'Cet espace éditorial est conçu pour accueillir le récit officiel de la boutique et de son parcours dès sa validation par la direction.',
+          'Cet espace éditorial est prévu pour accueillir l’histoire officielle de la boutique dès qu’elle sera approuvée par la direction.',
         pillars: [
           {
-            label: '01 · Sélection',
+            label: '01 · Offre',
             title: 'Prêt-à-porter féminin et caftans',
             description:
-              'Des propositions pensées aussi bien pour le quotidien que pour les moments d’exception.',
+              'Une offre dédiée à celles qui recherchent l’élégance féminine et des pièces inspirées de la tradition marocaine.',
           },
           {
-            label: '02 · Harmonie',
-            title: 'Soin des lignes et tombé',
+            label: '02 · Style',
+            title: 'Équilibre entre tradition et modernité',
             description:
-              'Une attention constante portée aux proportions, à l’allure et au confort de chaque pièce.',
+              'Un dialogue visuel entre l’esthétique classique du caftan et le goût contemporain.',
           },
           {
-            label: '03 · Accueil',
-            title: 'Écoute et conseil en boutique',
+            label: '03 · Boutique',
+            title: 'Accueil en magasin',
             description:
-              'Un accueil attentif et discret pour accompagner chaque visiteuse dans son choix.',
+              'Un cadre réservé à Borgosesia pour découvrir de près les collections présentées en boutique.',
           },
         ],
       },
       tradition: {
         eyebrow: 'Tradition et Détails',
         title: 'L’univers esthétique du caftan marocain',
-        body: 'Dans la tradition vestimentaire marocaine, le caftan incarne une élégance féminine intemporelle, reconnaissable à la noblesse visuelle des étoffes, à la finesse des broderies et à l’harmonie des ornements. Maison Karima célèbre cet héritage esthétique avec un regard contemporain.',
+        body: 'Dans la culture vestimentaire du Maroc, le caftan est reconnu comme un symbole d’élégance féminine, expression d’une esthétique raffinée où étoffes, broderies et proportions s’accordent avec harmonie. Maison Karima s’inspire de cet univers en l’associant à une sensibilité contemporaine.',
         aestheticPoints: [
           {
-            title: 'Étoffes et tombé',
+            title: 'Étoffes et tradition',
             description:
-              'Des matières choisies dans l’esprit du caftan pour souligner la fluidité, l’éclat et l’allure.',
+              'Dans l’imaginaire du caftan marocain, la diversité des étoffes et le jeu des lignes dessinent une silhouette emblématique et féminine.',
           },
           {
-            title: 'Broderies et ornements',
+            title: 'Broderies et détails',
             description:
-              'Des motifs et finitions décoratives inspirés du patrimoine esthétique marocain, tout en retenue.',
+              'Les motifs décoratifs et les broderies propres à la tradition marocaine évoquent un goût raffiné et intemporel.',
           },
           {
-            title: 'Équilibre contemporain',
+            title: 'Esprit contemporain',
             description:
-              'Un dialogue constant entre inspiration traditionnelle et recherche actuelle d’élégance.',
+              'La rencontre entre codes traditionnels et esthétique actuelle rend le caftan adapté aux sensibilités et envies modernes.',
           },
         ],
-        ornamentCaption: 'Élégance marocaine · Regard contemporain',
+        ornamentCaption: 'Élégance marocaine · Sensibilité contemporaine',
         ornamentSubcaption: 'Maison Karima · Borgosesia',
       },
       territory: {
         eyebrow: 'Ancrage Local',
         title: 'La boutique à Borgosesia',
-        body: 'Située Viale Carlo Fassò, 28, Maison Karima accueille les clientes à Borgosesia et dans la Valsesia pour découvrir de près les couleurs, les matières et les pièces de prêt-à-porter féminin et de caftans marocains.',
+        body: 'Située Viale Carlo Fassò, 28, Maison Karima accueille les clientes à Borgosesia pour découvrir du prêt-à-porter féminin et des caftans marocains. La visite en magasin permet d’observer directement les propositions disponibles.',
         addressLabel: 'Adresse vérifiée',
         welcomeNoteLabel: 'Visite en boutique',
         welcomeNote:
-          'Espace accueillant avec parking accessible en fauteuil roulant et possibilité de visites rapides.',
+          'Parking accessible en fauteuil roulant et possibilité de visites rapides.',
         ctaLabel: 'Accès et contact',
       },
       gallery: {
         eyebrow: 'Atmosphère et Espaces',
         title: 'Galerie de la boutique',
-        lead: 'Cet espace est prêt à accueillir les photographies officielles de la boutique, des vitrines et de l’ambiance intérieure dès leur validation par la direction.',
+        lead: 'Cet espace est prévu pour accueillir les photographies officielles de la boutique dès qu’elles seront approuvées par la direction.',
         badgeText: 'Photographie officielle à venir',
         slots: [
           {
@@ -377,14 +377,14 @@ export const FR_DICTIONARY: TranslationDictionary = {
               'Emplacement réservé à la photographie extérieure de la boutique Viale Carlo Fassò, 28 à Borgosesia.',
           },
           {
-            title: 'Espace intérieur',
+            title: 'Intérieur de la boutique',
             description:
-              'Emplacement réservé aux vues réelles de la boutique et de l’espace dédié à l’accueil.',
+              'Emplacement réservé aux images réelles et autorisées de l’espace intérieur du magasin.',
           },
           {
-            title: 'Détails et lignes',
+            title: 'Détails et collections',
             description:
-              'Emplacement réservé aux clichés autorisés des caftans marocains et du prêt-à-porter féminin.',
+              'Emplacement réservé aux clichés autorisés dédiés aux propositions de la boutique.',
           },
         ],
       },
@@ -392,7 +392,7 @@ export const FR_DICTIONARY: TranslationDictionary = {
         eyebrow: 'Poursuivre la visite',
         title: 'Découvrir les collections ou nous rendre visite en boutique',
         description:
-          'Parcourez les lignes présentées dans la rubrique Collections ou contactez-nous pour connaître les pièces disponibles à Borgosesia.',
+          'Découvrez les lignes de la boutique dans la rubrique Collections ou contactez-nous pour obtenir des informations sur les propositions disponibles à Borgosesia.',
         collectionsCta: 'Découvrir les collections',
         contactsCta: 'Contacter la boutique',
       },
