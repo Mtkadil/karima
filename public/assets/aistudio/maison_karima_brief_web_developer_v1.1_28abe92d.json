@@ -1,0 +1,314 @@
+{
+  "documento": {
+    "titolo": "Maison Karima — Brief Operativo per Web Designer e Full-Stack Developer",
+    "versione": "1.1",
+    "data": "2026-11-21",
+    "stato": "Aggiornato con verifica Google Business Profile e analisi dominio esistente; pronti per avvio struttura, in attesa di conferma finale della titolare su asset e servizi",
+    "lingua": "it-IT"
+  },
+  "attivita": {
+    "nome_commerciale": "MAISON KARIMA",
+    "tipologia": "Negozio di abbigliamento femminile e caftani marocchini",
+    "indirizzo": {
+      "via": "Viale Carlo Fassò, 28",
+      "cap": "13011",
+      "comune": "Borgosesia",
+      "provincia": "VC",
+      "regione": "Piemonte",
+      "paese": "Italia",
+      "stato_verifica": "Verificato su scheda Google Business Profile",
+      "google_maps_url": "https://maps.app.goo.gl/9mUhdiR95CX1n32T9",
+      "google_place_id": "ChIJ7T2KCAARhkcRfYtBmLU_WpA"
+    },
+    "contatti": {
+      "telefono": {
+        "valore": "+39 329 921 6661",
+        "formato_link": "tel:+393299216661",
+        "stato_verifica": "Verificato su Google Business Profile"
+      },
+      "whatsapp": {
+        "numero_presunto": "+39 329 921 6661",
+        "stato_verifica": "Da confermare con la titolare l'abilitazione WhatsApp Business e l'autorizzazione al collegamento diretto"
+      },
+      "email": {
+        "valore": null,
+        "stato_verifica": "Non presente pubblicamente su Google Maps né sul sito attuale; da richiedere alla titolare"
+      },
+      "social": {
+        "instagram": {
+          "handle": "@maison_karima_sartoria_kaftan",
+          "url": "https://www.instagram.com/maison_karima_sartoria_kaftan",
+          "stato_verifica": "URL fornito dall'utente; profilo non ispezionabile pubblicamente senza login (richiedere accesso o bio/media direttamente alla titolare)"
+        },
+        "facebook": {
+          "url": null,
+          "stato_verifica": "Da verificare se esistente"
+        }
+      }
+    },
+    "orari_apertura": {
+      "fonte": "Google Business Profile",
+      "stato_verifica": "Verificato su scheda Google Maps (richiedere eventuale conferma stagionale/festività)",
+      "settimanale": {
+        "lunedi": [
+          "09:00-12:00",
+          "15:30-19:00"
+        ],
+        "martedi": [
+          "09:00-12:00",
+          "15:30-19:00"
+        ],
+        "mercoledi": [
+          "09:00-12:00",
+          "15:30-19:00"
+        ],
+        "giovedi": [
+          "09:00-12:00",
+          "15:30-19:00"
+        ],
+        "venerdi": [
+          "09:00-12:00",
+          "15:30-19:00"
+        ],
+        "sabato": [
+          "09:00-12:00",
+          "15:30-19:00"
+        ],
+        "domenica": [
+          "09:00-12:00",
+          "15:30-19:00"
+        ]
+      }
+    },
+    "accessibilita_e_pagamenti": {
+      "fonte": "Google Business Profile",
+      "parcheggio": "Parcheggio accessibile in sedia a rotelle",
+      "esperienza_visita": "Possibilità di visite rapide",
+      "metodi_pagamento_accettati": [
+        "Carte di credito",
+        "Carte di debito",
+        "Pagamenti mobili NFC"
+      ]
+    },
+    "reputazione_google": {
+      "valutazione_media": 5.0,
+      "numero_recensioni": 6,
+      "fonte": "Google Business Profile"
+    },
+    "presenza_web_esistente": {
+      "url": "https://maisonkarima.com/",
+      "piattaforma_attuale": "GoDaddy Sites Web + Marketing",
+      "copyright_rilevato": "Copyright © 2026 Maison karima - Tous droits réservés.",
+      "lingua_rilevata": "Francese (interfaccia/cookie/footer) e Italiano (claim principale)",
+      "claim_rilevato": "Caftani di lusso e abbigliamento donna – brand, vendita, noleggio e riparazioni",
+      "funzionalita_rilevate": [
+        "Modulo di contatto / iscrizione newsletter protetto da Google reCAPTCHA",
+        "Banner gestione cookie"
+      ],
+      "dati_mancanti_sul_sito": [
+        "Email pubblica",
+        "Partita IVA / Ragione sociale / Sede legale nel footer"
+      ],
+      "stato_verifica": "Dominio attivo rilevato; confermare con la titolare l'accesso registrar/DNS per il puntamento del nuovo sito e l'effettiva erogazione dei servizi citati (noleggio e riparazioni)"
+    }
+  },
+  "obiettivo_progetto": {
+    "primario": "Sostituire/evolvere l'attuale sito vetrina GoDaddy con una piattaforma web elegante, veloce e professionale per Maison Karima (Borgosesia), valorizzando abbigliamento femminile e caftani marocchini.",
+    "secondari": [
+      "Mostrare collezioni e prodotti con fotografie reali e di alta qualità.",
+      "Facilitare il contatto diretto tramite WhatsApp (click-to-chat) e chiamata rapida.",
+      "Integrare correttamente indirizzo, orari verificati, accessibilità, metodi di pagamento e recensioni Google.",
+      "Valorizzare i servizi di noleggio, riparazione o modifica sartoriale (già accennati su maisonkarima.com e nell'handle Instagram @maison_karima_sartoria_kaftan) previa conferma operativa della titolare."
+    ],
+    "pubblico_target": [
+      "Donne interessate ad abbigliamento femminile contemporaneo e tradizionale.",
+      "Clienti in cerca di caftani marocchini (quotidiani, cerimonia, matrimonio, occasioni speciali) per acquisto o noleggio.",
+      "Clienti locali a Borgosesia (VC) e provincia, oltre a visitatrici da comuni limitrofi."
+    ]
+  },
+  "posizionamento_e_identita": {
+    "direzione_creativa_proposta": "Elegante, femminile, raffinata, con richiami contemporanei all'alta sartoria e all'artigianato marocchino.",
+    "palette_proposta": [
+      {
+        "nome": "Avorio",
+        "hex_suggerito": "#FAF8F5",
+        "uso": "Sfondi principali e spazi ampi"
+      },
+      {
+        "nome": "Oro tenue",
+        "hex_suggerito": "#C5A059",
+        "uso": "Dettagli, bordi sottili e accenti premium"
+      },
+      {
+        "nome": "Bordeaux / Prugna",
+        "hex_suggerito": "#5C1E2E",
+        "uso": "Accenti primari e Call to Action"
+      },
+      {
+        "nome": "Antracite",
+        "hex_suggerito": "#222222",
+        "uso": "Testi principali e massimo contrasto"
+      }
+    ],
+    "nota_identita": "Palette e stile sono proposte creative per il mockup; verificare se la titolare dispone già di un logo ufficiale (es. dal profilo Instagram o da materiali fisici in negozio).",
+    "materiali_da_acquisire_prima_del_go_live": [
+      "Logo ufficiale in formato vettoriale (SVG/PDF) o PNG trasparente ad alta risoluzione.",
+      "Fotografie reali del negozio (esterno/insegna, interni) e delle collezioni/caftani.",
+      "Testi approvati per storia del brand e presentazione della titolare.",
+      "Dati fiscali obbligatori per il footer (Ragione Sociale, P.IVA, Sede Legale)."
+    ]
+  },
+  "contenuti_e_servizi": {
+    "categorie_merceologiche_e_servizi": [
+      {
+        "nome": "Abbigliamento femminile",
+        "stato": "Confermato su Google Maps e sito web; da acquisire catalogo foto e fasce prezzo"
+      },
+      {
+        "nome": "Caftani marocchini",
+        "stato": "Confermato su Google Maps, sito web e handle Instagram (sartoria_kaftan); da acquisire tipologie (cerimonia, sposa, quotidiani) e disponibilità"
+      },
+      {
+        "nome": "Noleggio caftani",
+        "stato": "Indicato nel claim di maisonkarima.com; confermare con la titolare condizioni, tariffe, cauzione e durata prima di pubblicare dettagli"
+      },
+      {
+        "nome": "Riparazioni e modifiche sartoriali",
+        "stato": "Indicato nel claim di maisonkarima.com e coerente con handle Instagram (@maison_karima_sartoria_kaftan); confermare tipologie di intervento e modalità di preventivo"
+      }
+    ],
+    "attributi_scheda_prodotto": [
+      "ID / Codice articolo",
+      "Nome modello",
+      "Categoria (Abbigliamento donna / Caftani / Cerimonia)",
+      "Tipologia disponibilità (Vendita / Noleggio / Su ordinazione)",
+      "Descrizione tessuti e lavorazioni",
+      "Prezzo o dicitura 'Prezzo su richiesta'",
+      "Taglie e vestibilità",
+      "Colori disponibili",
+      "Galleria fotografica"
+    ]
+  },
+  "architettura_informazione_e_pagine": [
+    {
+      "pagina": "Home",
+      "sezioni": [
+        "Hero section con visual d'impatto, claim brand e CTA principale (Esplora Collezioni / Contattaci su WhatsApp)",
+        "Breve introduzione a Maison Karima (Sartoria e Boutique a Borgosesia)",
+        "Vetrina categorie principali (Caftani di lusso, Abbigliamento donna, Sartoria & Noleggio)",
+        "Selezione capi in evidenza",
+        "Social proof: box recensioni verificate (5.0/5 su Google)",
+        "Banner rapido posizione, orari e contatti"
+      ]
+    },
+    {
+      "pagina": "Collezioni (Abbigliamento & Caftani)",
+      "sezioni": [
+        "Navigazione/filtri per categoria (Caftani, Abbigliamento Femminile, Cerimonia)",
+        "Griglia prodotti con foto ad alta risoluzione",
+        "Scheda dettaglio prodotto con pulsante diretto 'Richiedi disponibilità su WhatsApp' con nome articolo precompilato"
+      ]
+    },
+    {
+      "pagina": "Servizi (Sartoria & Noleggio)",
+      "sezioni": [
+        "Sezione Noleggio Caftani (da attivare/dettagliare post-conferma titolare)",
+        "Sezione Riparazioni e Modifiche Sartoriali (da attivare/dettagliare post-conferma titolare)",
+        "Modulo o CTA rapida per richiesta preventivo/appuntamento in atelier"
+      ]
+    },
+    {
+      "pagina": "Chi Siamo",
+      "sezioni": [
+        "Storia della boutique a Borgosesia e filosofia artigianale",
+        "Cura dei tessuti, ricami e attenzione al cliente",
+        "Galleria ambiente negozio"
+      ]
+    },
+    {
+      "pagina": "Contatti e Dove Siamo",
+      "sezioni": [
+        "Indirizzo verificato: Viale Carlo Fassò, 28, 13011 Borgosesia (VC)",
+        "Orari di apertura completi (Lun-Dom 09:00-12:00 / 15:30-19:00)",
+        "Info accessibilità (parcheggio accessibile in sedia a rotelle) e pagamenti accettati (Carte e NFC)",
+        "Pulsanti diretti: Chiama (+39 329 921 6661), WhatsApp, Apri su Google Maps",
+        "Link diretto a Instagram (@maison_karima_sartoria_kaftan)",
+        "Modulo di contatto con protezione anti-spam"
+      ]
+    }
+  ],
+  "specifiche_tecniche_per_sviluppatore": {
+    "stack_e_architettura": {
+      "approccio": "Sito vetrina/catalogo leggero, mobile-first, SEO-oriented, predisposto per aggiornamento autonomo dei capi (Headless CMS leggero o pannello admin dedicato).",
+      "gestione_dominio": "Migrazione/puntamento DNS del dominio esistente maisonkarima.com (attualmente su GoDaddy) verso il nuovo hosting con certificato SSL/HTTPS.",
+      "multilingua": "Struttura predisposta per Italiano (primario) ed eventuale Francese (visto il pubblico e la presenza di testi FR sul sito GoDaddy attuale) da confermare con la titolare."
+    },
+    "requisiti_funzionali": [
+      "Design 100% responsive (mobile-first) ottimizzato per traffico proveniente da Instagram e Google Maps",
+      "Pulsante flottante o fisso WhatsApp con messaggio precompilato dinamico (es. pagina generale vs singolo prodotto)",
+      "Link click-to-call (tel:+393299216661) e link diretto indicazioni Google Maps (https://maps.app.goo.gl/9mUhdiR95CX1n32T9)",
+      "Ottimizzazione immagini automatica (WebP/AVIF, srcset responsive, lazy loading)",
+      "Modulo contatti protetto da anti-spam (reCAPTCHA / Turnstile / Honeypot) con validazione lato server",
+      "Gestione GDPR completa: Privacy Policy, Cookie Policy e banner consenso (adeguato agli strumenti effettivamente integrati)"
+    ],
+    "seo_e_dati_strutturati": {
+      "schema_org": {
+        "tipo": "ClothingStore",
+        "name": "MAISON KARIMA",
+        "address": "Viale Carlo Fassò, 28, 13011 Borgosesia VC, Italia",
+        "telephone": "+39 329 921 6661",
+        "openingHours": "Mo-Su 09:00-12:00, 15:30-19:00",
+        "url": "https://maisonkarima.com/",
+        "sameAs": [
+          "https://www.instagram.com/maison_karima_sartoria_kaftan",
+          "https://maps.app.goo.gl/9mUhdiR95CX1n32T9"
+        ],
+        "aggregateRating": {
+          "ratingValue": "5.0",
+          "reviewCount": "6"
+        }
+      },
+      "keyword_locali_target": [
+        "Maison Karima Borgosesia",
+        "caftani marocchini Borgosesia",
+        "noleggio caftani Piemonte",
+        "sartoria caftani Borgosesia",
+        "abbigliamento femminile Borgosesia"
+      ],
+      "requisiti_tecnici_seo": [
+        "Meta title, meta description e tag Open Graph / Twitter Card per ogni pagina",
+        "Sitemap.xml dinamica e robots.txt",
+        "Core Web Vitals ottimizzati (LCP < 2.5s, CLS < 0.1)"
+      ]
+    },
+    "schema_dati_prodotto": {
+      "id": "string",
+      "nome": "string",
+      "slug": "string",
+      "categoria": "string (caftani | abbigliamento-donna | cerimonia)",
+      "modalita": "array<string> (vendita | noleggio | su-misura)",
+      "descrizione": "string",
+      "prezzo": "number | null",
+      "mostra_prezzo": "boolean",
+      "valuta": "EUR",
+      "taglie": "array<string>",
+      "colori": "array<string>",
+      "immagini": "array<{url: string, alt: string}>",
+      "in_evidenza": "boolean",
+      "visibile": "boolean"
+    }
+  },
+  "checklist_bloccanti_pre_pubblicazione": {
+    "p0_indispensabili": [
+      "Conferma credenziali accesso dominio maisonkarima.com su GoDaddy",
+      "Acquisizione logo ufficiale (SVG/PNG) e fotografie reali autorizzate",
+      "Conferma dati societari obbligatori per footer (P.IVA, Ragione Sociale, Email)",
+      "Conferma attivazione numero +39 329 921 6661 su WhatsApp"
+    ],
+    "p1_importanti": [
+      "Conferma dettaglio servizi di noleggio e riparazioni sartoriali",
+      "Conferma necessità versione multilingua (IT / FR)",
+      "Recupero bio/immagini dal profilo Instagram @maison_karima_sartoria_kaftan"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Maison Karima",
+  "description": "Boutique di abbigliamento femminile e caftani marocchini a Borgosesia (VC).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

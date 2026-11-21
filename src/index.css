@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-avorio: #FAF8F5;
+  --color-oro: #C5A059;
+  --color-bordeaux: #5C1E2E;
+  --color-antracite: #222222;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-avorio);
+    color: var(--color-antracite);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
