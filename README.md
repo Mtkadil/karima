@@ -34,10 +34,12 @@ npx tsx --test src/utils/*.test.ts
 npm run build
 ```
 
-## Collegamento Repository GitHub (`maison-karima-website`)
+## Repository GitHub (`Mtkadil/karima`)
+
+Il progetto è collegato al repository esistente `Mtkadil/karima` (branch `main`):
 
 ```bash
-git remote add origin https://github.com/<tuo-utente>/maison-karima-website.git
+git remote add origin https://github.com/Mtkadil/karima.git
 git branch -M main
 git push -u origin main
 ```

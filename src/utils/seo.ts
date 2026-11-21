@@ -17,13 +17,13 @@ export interface ClothingStoreJsonLd {
   };
   openingHours: string;
   sameAs: string[];
-  aggregateRating: {
-    '@type': 'AggregateRating';
-    ratingValue: string;
-    reviewCount: string;
-  };
 }
 
+/**
+ * Genera i dati strutturati Schema.org ClothingStore dai dati verificati.
+ * Nota SEO: AggregateRating viene omesso per evitare markup non conforme
+ * alle linee guida Google sulle recensioni di terze parti / Google Maps.
+ */
 export function buildClothingStoreJsonLd(business: BusinessInfo): ClothingStoreJsonLd {
   const sameAs = [
     business.contacts.social.instagram.url,
@@ -50,10 +50,5 @@ export function buildClothingStoreJsonLd(business: BusinessInfo): ClothingStoreJ
     },
     openingHours: business.openingHoursSchema,
     sameAs,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: business.googleReputation.ratingValue.toFixed(1),
-      reviewCount: String(business.googleReputation.reviewCount),
-    },
   };
 }
