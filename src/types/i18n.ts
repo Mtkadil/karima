@@ -292,9 +292,42 @@ export interface TranslationDictionary {
       eyebrow: string;
       heading: string;
       lead: string;
-      emailPending: string;
-      formSlotTitle: string;
-      formSlotDescription: string;
+      heroPrimaryCta: string;
+      heroSecondaryCta: string;
+      contactCard: {
+        eyebrow: string;
+        title: string;
+        addressLabel: string;
+        phoneLabel: string;
+        instagramLabel: string;
+        mapsButtonLabel: string;
+      };
+      hoursCard: {
+        eyebrow: string;
+        title: string;
+        sourceBadge: string;
+        note: string;
+      };
+      locationSection: {
+        eyebrow: string;
+        title: string;
+        description: string;
+        verifiedNote: string;
+        ctaLabel: string;
+      };
+      accessibilitySection: {
+        eyebrow: string;
+        accessibilityTitle: string;
+        accessibilityItems: readonly string[];
+        paymentsTitle: string;
+        paymentItems: readonly string[];
+      };
+      instagramSection: {
+        eyebrow: string;
+        title: string;
+        description: string;
+        ctaLabel: string;
+      };
     };
     notFound: {
       heading: string;

@@ -33,8 +33,9 @@ export const FR_DICTIONARY: TranslationDictionary = {
           'Identité, univers esthétique et adresse de la boutique Maison Karima à Borgosesia : prêt-à-porter féminin et caftans marocains.',
       },
       contatti: {
-        title: 'Contact et Accès — Maison Karima',
-        description: 'Adresse Viale Carlo Fassò 28, horaires et téléphone +39 329 921 6661.',
+        title: 'Contact et Accès — Maison Karima Borgosesia',
+        description:
+          'Rendez-nous visite Viale Carlo Fassò 28 à Borgosesia (VC) : téléphone +39 329 921 6661, horaires d’ouverture, accessibilité, moyens de paiement et itinéraire Google Maps.',
       },
     },
   },
@@ -398,12 +399,54 @@ export const FR_DICTIONARY: TranslationDictionary = {
       },
     },
     contatti: {
-      eyebrow: 'Coordonnées vérifiées',
-      heading: 'Contact et Accès',
-      lead: 'Adresse, horaires, accessibilité et moyens de paiement vérifiés.',
-      emailPending: 'E-mail public : en attente de confirmation.',
-      formSlotTitle: 'Formulaire de contact (emplacement prévu)',
-      formSlotDescription: 'Formulaire protégé anti-spam activé lors des prochaines phases.',
+      eyebrow: 'Contact et Accès',
+      heading: 'Nous rendre visite',
+      lead: 'Nous vous accueillons à Borgosesia, Viale Carlo Fassò 28. Contactez-nous par téléphone ou ouvrez l’itinéraire pour rejoindre facilement la boutique.',
+      heroPrimaryCta: 'Itinéraire',
+      heroSecondaryCta: 'Appeler la boutique',
+      contactCard: {
+        eyebrow: 'Coordonnées Officielles',
+        title: 'Informations de contact',
+        addressLabel: 'Adresse',
+        phoneLabel: 'Téléphone',
+        instagramLabel: 'Instagram',
+        mapsButtonLabel: 'Ouvrir dans Google Maps',
+      },
+      hoursCard: {
+        eyebrow: 'Google Business Profile',
+        title: 'Horaires d’ouverture',
+        sourceBadge: 'Horaires relevés sur Google',
+        note: 'Ces horaires sont relevés sur Google Business Profile et peuvent être soumis à des variations saisonnières ou lors des jours fériés.',
+      },
+      locationSection: {
+        eyebrow: 'Où nous trouver',
+        title: 'La boutique à Borgosesia',
+        description:
+          'Maison Karima est située Viale Carlo Fassò, 28 à Borgosesia (VC), dans le Piémont. Ouvrez directement l’itinéraire sur Google Maps pour vous rendre en boutique depuis votre appareil.',
+        verifiedNote: 'Localisation vérifiée sur la fiche Google Business Profile',
+        ctaLabel: 'Ouvrir l’itinéraire sur Google Maps',
+      },
+      accessibilitySection: {
+        eyebrow: 'Accueil et Paiements',
+        accessibilityTitle: 'Accessibilité et visite',
+        accessibilityItems: [
+          'Parking accessible en fauteuil roulant',
+          'Possibilité de visites rapides',
+        ],
+        paymentsTitle: 'Moyens de paiement',
+        paymentItems: [
+          'Cartes de crédit',
+          'Cartes de débit',
+          'Paiements mobiles NFC',
+        ],
+      },
+      instagramSection: {
+        eyebrow: 'Profil Officiel',
+        title: 'Suivre Maison Karima sur Instagram',
+        description:
+          'Suivez les collections et les nouveautés de la boutique sur le profil Instagram officiel @maison_karima_sartoria_kaftan.',
+        ctaLabel: 'Voir @maison_karima_sartoria_kaftan',
+      },
     },
     notFound: {
       heading: 'Page introuvable',
